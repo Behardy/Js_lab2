@@ -22,7 +22,7 @@ function startGame() {
 function startCombat() {
     let move = prompt(`Do you wich to Attack or Quit`)
     while (startGame) {
-        if (move = "Attack") {
+        if (move === "Attack") {
             getDamage()
 
             if (grantHealth <= 0) {
@@ -40,7 +40,7 @@ function startCombat() {
                 break;
             }
         } else {
-            move = "Quit";
+            move ==="Quit";
             console.log(`Game Over!`);
             return startGame();
 
